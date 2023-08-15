@@ -19,6 +19,7 @@ Codenamer.Type = "Codenamer"
 Codenamer.Interface = {}
 Codenamer.Internal = {}
 Codenamer.Prototype = {
+	Internal = Codenamer.Internal,
 	Dicts = {
 		Type = "Default",
 		[1] = require("./dictionaries/adjectives"),
@@ -34,7 +35,7 @@ function Codenamer.Internal.mul32(a: number)
 		local m = InfiniteMath.new(4294967296)
 
 		t = bit32.bxor(t, bit32.rshift(t, 15) * bit32.bor(t, 1))
-		t = t + bit32.bxor(t, bit32.bxor(t, bit32.rshift(t, 7)), bit32.bor(t, 61))
+		t += bit32.bxor(t, bit32.bxor(t, bit32.rshift(t, 7)), bit32.bor(t, 61))
 
 		return ((bit32.rshift(bit32.bxor(t, bit32.rshift(t, 14)), 0)) / m):Reverse()
 	end
@@ -86,8 +87,6 @@ function Codenamer.Prototype:get_codename(sep_str: string?, len: number)
 end
 
 function Codenamer.Interface.new()
-	Codenamer.Prototype.Internal = Codenamer.Internal
-
 	return setmetatable({}, {
 		__index = Codenamer.Prototype,
 		__type = Codenamer.Type,
