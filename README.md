@@ -14,7 +14,7 @@ See [examples](/examples) for a variety of examples exploring various functional
 # Development
 This library is intended to be used with [lune](https://github.com/filiptibell/lune), a standalone Luau runtime. 
 
-Due to the current state of [wally](https://wally.run), installing packages on lune is not successful by default. This project includes a [dependency installation script](/scripts/install-deps.luau), which can be used to set up a development environment. The script is currently only compatible for unix-like devices, but there are plans to make it platform-independent soon.
+Due to the current state of [wally](https://wally.run), installing packages on lune is not successful by default. This project includes a [dependency installation script](/scripts/install-deps.luau), which can be used to set up a development environment. The script is platform independent.
 
 ### Running Examples
 Once the development environment has been set up, build the minified package bundle by running [bundle-prod.sh](/scripts/bundle-prod.sh). 
