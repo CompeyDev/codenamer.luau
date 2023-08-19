@@ -1,3 +1,5 @@
+#!/usr/bin/env lune
+
 --!strict
 local fs = require("@lune/fs")
 local process = require("@lune/process")
