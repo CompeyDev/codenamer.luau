@@ -23,7 +23,9 @@ Codenamer.Prototype = {
 	Dicts = {
 		Type = "Default",
 		[1] = require("./dictionaries/adjectives"),
-		[2] = require("./dictionaries/animals"),
+		[2] = require("./dictionaries/colors"),
+		[3] = require("./dictionaries/languages"),
+		[4] = require("./dictionaries/animals"),
 	},
 }
 
