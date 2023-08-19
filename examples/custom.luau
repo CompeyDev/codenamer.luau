@@ -1,3 +1,10 @@
+--[[
+    examples/custom.luau
+
+    Description: A slightly modified version of the simple example, including
+                 custom dictionaries.
+]]--
+
 local Codenamer = require("../dist/codenamer")
 local stdio = require("@lune/stdio")
 local process = require("@lune/process")

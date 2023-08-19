@@ -1,3 +1,10 @@
+--[[
+    examples/tostring.luau
+
+    Description: Codenamer implements a custom tostring metamethod, which returns a "generic type"
+                 based on the state of the codenamer instance.
+]]--
+
 local Codenamer = require("../dist/codenamer")
 
 local codenamer = Codenamer.new()

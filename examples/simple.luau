@@ -1,3 +1,11 @@
+--[[
+    examples/simple.luau
+
+    Description: A basic codenamer example, which requests the user for a 
+                 number of codenames to generate, the way to format them, and 
+                 then generates and prints them.
+]]--
+
 local Codenamer = require("../dist/codenamer")
 local stdio = require("@lune/stdio")
 local process = require("@lune/process")
